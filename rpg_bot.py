@@ -343,7 +343,7 @@ class MyClient(discord.Client):
                 ability_list = "\n".join([f"**{name}** - {details['description']}" for name, details in abilities.items()])
                 await message.channel.send(
                     f"🌀 **Available Abilities for {player_class.capitalize()}**:\n{ability_list}\n\n"
-                    f"Use an ability by typing: '$attack <name>' (Ex: '$attack slash)"
+                    f"Use an ability by typing: '$attack <name>' (Ex: '$attack slash')"
                 )
                 return
             
