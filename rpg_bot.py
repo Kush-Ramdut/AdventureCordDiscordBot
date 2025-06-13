@@ -371,7 +371,7 @@ class MyClient(discord.Client):
                 battle["player_hp"] -= dummy_damage
                 await message.channel.send(f"💥The {dummy['name']} strikes back for **{dummy_damage}** damage! 💥")
 
-                if battle[player_hp] <= 0 :
+                if battle["player_hp"] <= 0 :
                     await message.channel.send(f"{player_name} has been defeated by the {dummy['name']}... Loser...")
                     del active_battles[user_id]
                     return
